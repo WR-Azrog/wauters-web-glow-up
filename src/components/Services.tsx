@@ -1,5 +1,5 @@
 import ServiceCard from "./ServiceCard";
-import { Thermometer, Wrench, Home, Construction } from "lucide-react";
+import { Hammer, Droplets, Home, Shield } from "lucide-react";
 import chauffageImage from "@/assets/chauffage-sanitaire.jpg";
 import plomberieImage from "@/assets/plomberie.jpg";
 import amenagementImage from "@/assets/amenagement-interieur.jpg";
@@ -8,42 +8,41 @@ import toitureImage from "@/assets/toiture.jpg";
 const Services = () => {
   const services = [
     {
-      title: "Chauffage & Sanitaire",
-      description: "Installation et maintenance de systèmes de chauffage efficaces, ainsi que de solutions sanitaires modernes pour un confort optimal dans votre maison ou votre entreprise.",
+      title: "CHAUFFAGE & SANITAIRE",
+      description: "Installation et maintenance de systèmes de chauffage, chaudières, radiateurs et installations sanitaires complètes.",
       image: chauffageImage,
-      icon: <Thermometer className="w-6 h-6 text-primary-foreground" />
+      icon: <Droplets className="w-6 h-6 text-white" />
     },
     {
-      title: "Plomberie",
-      description: "Installation, réparation et entretien de vos systèmes de plomberie, pour assurer un fonctionnement optimal et durable de vos installations.",
+      title: "PLOMBERIE",
+      description: "Réparation, installation et dépannage de tous types de canalisations, robinetterie et équipements sanitaires.",
       image: plomberieImage,
-      icon: <Wrench className="w-6 h-6 text-primary-foreground" />
+      icon: <Hammer className="w-6 h-6 text-white" />
     },
     {
-      title: "Aménagement Intérieur", 
-      description: "Transformez vos espaces avec notre service d'aménagement intérieur sur mesure, alliant design et fonctionnalité pour répondre à vos besoins.",
+      title: "AMÉNAGEMENT INTÉRIEUR",
+      description: "Rénovation complète d'intérieurs, cloisons, sols, peinture et aménagements sur mesure pour votre confort.",
       image: amenagementImage,
-      icon: <Home className="w-6 h-6 text-primary-foreground" />
+      icon: <Home className="w-6 h-6 text-white" />
     },
     {
-      title: "Toiture",
-      description: "Des services de toiture complets : installation, réparation et entretien pour assurer la protection de votre maison face aux intempéries et à l'usure du temps.",
+      title: "TOITURE",
+      description: "Réfection, réparation et entretien de toitures. Expertise en couverture traditionnelle et moderne.",
       image: toitureImage,
-      icon: <Construction className="w-6 h-6 text-primary-foreground" />
+      icon: <Shield className="w-6 h-6 text-white" />
     }
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Découvrez nos services</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Une équipe d'experts qualifiés pour tous vos projets de rénovation et construction
-          </p>
+    <section className="py-16 bg-background ml-80">
+      <div className="px-8">
+        <div className="mb-12">
+          <div className="inline-block bg-primary text-primary-foreground px-6 py-3 font-black text-2xl mb-4">
+            Services
+          </div>
         </div>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 gap-8">
           {services.map((service, index) => (
             <ServiceCard key={index} {...service} />
           ))}

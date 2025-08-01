@@ -4,34 +4,49 @@ import heroImage from "@/assets/hero-construction.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-[600px] flex items-center">
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ 
-          backgroundImage: `url(${heroImage})`,
-          filter: 'brightness(0.4)'
-        }}
-      />
-      <div className="relative container mx-auto px-4 py-20 text-center text-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          Rénovation & Construction
-          <span className="block text-primary text-3xl md:text-4xl mt-2">
-            Depuis plus de 20 ans à votre service
-          </span>
-        </h1>
-        <p className="text-lg md:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-          Une entreprise familiale qui met son savoir-faire au service de vos projets. 
-          Chauffage, plomberie, aménagement intérieur et toiture.
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button size="lg" className="flex items-center space-x-2 bg-primary hover:bg-primary/90 px-8 py-3">
-            <Phone className="w-5 h-5" />
-            <span>Appelez Olivier maintenant</span>
-          </Button>
-          <Button variant="outline" size="lg" className="flex items-center space-x-2 border-white text-white hover:bg-white hover:text-primary px-8 py-3">
-            <span>Devis gratuit</span>
-            <ArrowRight className="w-5 h-5" />
-          </Button>
+    <section className="relative min-h-screen flex items-center" style={{
+      backgroundImage: `url(${heroImage})`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat'
+    }}>
+      <div className="absolute inset-0 bg-black/40" />
+      <div className="relative ml-80 px-8 py-20 text-white max-w-4xl">
+        {/* Titre principal avec blocs orange */}
+        <div className="space-y-4 mb-8">
+          <div className="inline-block bg-primary px-6 py-3 font-black text-xl md:text-2xl">
+            L'ENTREPRISE A 20 ANS
+          </div>
+          <div className="inline-block bg-primary px-6 py-3 font-black text-xl md:text-2xl">
+            D'EXPÉRIENCE
+          </div>
+          <div className="inline-block bg-primary px-6 py-3 font-black text-xl md:text-2xl">
+            DANS LA RÉNOVATION
+          </div>
+        </div>
+        
+        <div className="space-y-6">
+          <h2 className="text-3xl md:text-4xl font-bold">
+            ENTREPRISES WAUTERS A 20 ANS D'EXPÉRIENCE DANS LA RÉNOVATION, 
+            SON SIÈGE EST BASÉ EN BELGIQUE
+          </h2>
+          
+          <p className="text-lg opacity-90 max-w-3xl leading-relaxed">
+            <strong>Entreprises Wauters</strong> intervient dans toute la Belgique. 
+            Depuis sa création, notre entreprise familiale est en constante progression 
+            avec une croissance maîtrisée et un savoir-faire reconnu.
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-4 text-lg">
+              <Phone className="w-5 h-5 mr-2" />
+              DEMANDE DE DEVIS
+            </Button>
+            <Button variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-8 py-4 text-lg">
+              NOS RÉALISATIONS
+              <ArrowRight className="w-5 h-5 ml-2" />
+            </Button>
+          </div>
         </div>
       </div>
     </section>

@@ -4,66 +4,84 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section className="py-16 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contactez-nous</h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Prêt à démarrer votre projet ? Contactez-nous pour un devis gratuit et personnalisé
-          </p>
+    <section className="py-16 bg-muted ml-80">
+      <div className="px-8">
+        <div className="mb-12">
+          <div className="inline-block bg-primary text-primary-foreground px-6 py-3 font-black text-2xl mb-4">
+            Pourquoi optez-vous pour « Entreprises Wauters » ?
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          <Card className="text-center border-0 shadow-lg">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Phone className="w-6 h-6 text-primary-foreground" />
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <div className="space-y-6">
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-primary flex items-center justify-center mt-1">
+                <span className="text-primary-foreground font-bold">✓</span>
               </div>
-              <h3 className="font-semibold mb-2">Téléphone</h3>
-              <p className="text-muted-foreground">0472 64 06 45</p>
+              <p className="text-foreground">
+                Vous avez le projet de <strong>rénover ou construire</strong> et vous recherchez 
+                une entreprise de confiance pour vos travaux
+              </p>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-primary flex items-center justify-center mt-1">
+                <span className="text-primary-foreground font-bold">✓</span>
+              </div>
+              <p className="text-foreground">
+                Vous souhaitez faire appel à une <strong>entreprise familiale</strong> avec 
+                plus de 20 ans d'expérience
+              </p>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-primary flex items-center justify-center mt-1">
+                <span className="text-primary-foreground font-bold">✓</span>
+              </div>
+              <p className="text-foreground">
+                Vous privilégiez la <strong>qualité</strong> et la <strong>proximité</strong> 
+                dans le suivi de vos projets
+              </p>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-8 h-8 bg-primary flex items-center justify-center mt-1">
+                <span className="text-primary-foreground font-bold">✓</span>
+              </div>
+              <p className="text-foreground">
+                Vous recherchez un <strong>interlocuteur unique</strong> pour une 
+                traçabilité et un suivi optimal
+              </p>
+            </div>
+          </div>
+
+          <Card className="bg-card">
+            <CardContent className="p-6">
+              <h3 className="text-xl font-bold mb-6 text-foreground">Contactez-nous</h3>
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <Phone className="w-5 h-5 text-primary" />
+                  <span className="text-foreground font-medium">0472 64 06 45</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Mail className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">info@entreprises-wauters.be</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <MapPin className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">Belgique</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <Clock className="w-5 h-5 text-primary" />
+                  <span className="text-foreground">Lun-Ven: 8h-18h</span>
+                </div>
+              </div>
+              
+              <Button className="w-full mt-6 bg-primary hover:bg-primary/90 text-primary-foreground font-bold py-3">
+                DEMANDE DE DEVIS GRATUIT
+              </Button>
             </CardContent>
           </Card>
-
-          <Card className="text-center border-0 shadow-lg">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Mail className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-semibold mb-2">Email</h3>
-              <p className="text-muted-foreground text-sm">info@entreprises-wauters.be</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center border-0 shadow-lg">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MapPin className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-semibold mb-2">Zone d'intervention</h3>
-              <p className="text-muted-foreground text-sm">Belgique</p>
-            </CardContent>
-          </Card>
-
-          <Card className="text-center border-0 shadow-lg">
-            <CardContent className="p-6">
-              <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-4">
-                <Clock className="w-6 h-6 text-primary-foreground" />
-              </div>
-              <h3 className="font-semibold mb-2">Horaires</h3>
-              <p className="text-muted-foreground text-sm">Lun-Ven: 8h-18h</p>
-            </CardContent>
-          </Card>
-        </div>
-
-        <div className="text-center">
-          <Button size="lg" className="mr-4">
-            <Phone className="w-5 h-5 mr-2" />
-            Appeler maintenant
-          </Button>
-          <Button variant="outline" size="lg">
-            <Mail className="w-5 h-5 mr-2" />
-            Envoyer un email
-          </Button>
         </div>
       </div>
     </section>
