@@ -8,42 +8,42 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 45 15% 97%;
+    --foreground: 30 15% 25%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 42 20% 96%;
+    --card-foreground: 30 15% 25%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 42 20% 96%;
+    --popover-foreground: 30 15% 25%;
 
-    --primary: 214 85% 45%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 25 75% 55%;
+    --primary-foreground: 45 15% 97%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 40 25% 88%;
+    --secondary-foreground: 30 15% 35%;
 
-    --muted: 220 14% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 40 15% 92%;
+    --muted-foreground: 30 10% 50%;
 
-    --accent: 214 95% 93%;
-    --accent-foreground: 214 85% 25%;
+    --accent: 30 35% 85%;
+    --accent-foreground: 30 25% 30%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 45 15% 97%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 214 85% 45%;
+    --border: 40 20% 85%;
+    --input: 40 20% 90%;
+    --ring: 25 75% 55%;
 
-    /* Custom tokens for construction theme */
-    --hero-gradient: linear-gradient(135deg, hsl(214 85% 45%), hsl(214 95% 65%));
-    --service-card-bg: 0 0% 100%;
-    --service-card-hover: 214 95% 97%;
-    --construction-orange: 25 95% 53%;
-    --construction-gray: 220 9% 46%;
+    /* Custom tokens for homemade construction theme */
+    --hero-gradient: linear-gradient(135deg, hsl(25 75% 55%), hsl(30 65% 65%));
+    --service-card-bg: 42 20% 96%;
+    --service-card-hover: 40 25% 92%;
+    --construction-orange: 25 75% 55%;
+    --construction-gray: 30 15% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
 
     --sidebar-background: 0 0% 98%;
 

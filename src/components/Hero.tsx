@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="relative container mx-auto px-4 py-20 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
           Votre Projet de 
-          <span className="block bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent">
+          <span className="block text-primary">
             Rénovation
           </span>
         </h1>
