@@ -3,27 +3,27 @@ import { Phone, Mail } from "lucide-react";
 
 const Header = () => {
   return (
-    <header className="bg-background shadow-sm border-b">
-      <div className="container mx-auto px-4 py-4">
+    <header className="bg-background border-b border-border py-3">
+      <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-lg">EW</span>
+          <div className="flex items-center space-x-3">
+            <div className="w-12 h-12 bg-primary rounded flex items-center justify-center">
+              <span className="text-primary-foreground font-bold text-xl">EW</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">Entreprises Wauters</h1>
-              <p className="text-sm text-muted-foreground">Entrepreneur Général</p>
+              <h1 className="text-2xl font-bold text-foreground">Entreprises Wauters</h1>
+              <p className="text-muted-foreground">Entrepreneur Général - Entreprise Familiale</p>
             </div>
           </div>
           
-          <div className="flex items-center space-x-4">
-            <Button variant="outline" size="sm" className="flex items-center space-x-2">
+          <div className="flex items-center space-x-3">
+            <Button variant="outline" size="default" className="flex items-center space-x-2">
               <Phone className="w-4 h-4" />
               <span className="hidden sm:inline">0472 64 06 45</span>
             </Button>
-            <Button size="sm" className="flex items-center space-x-2">
+            <Button size="default" className="flex items-center space-x-2">
               <Mail className="w-4 h-4" />
-              <span className="hidden sm:inline">Contact</span>
+              <span className="hidden sm:inline">Devis gratuit</span>
             </Button>
           </div>
         </div>

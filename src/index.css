@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 45 15% 97%;
-    --foreground: 30 15% 25%;
+    --background: 35 25% 98%;
+    --foreground: 25 15% 20%;
 
-    --card: 42 20% 96%;
-    --card-foreground: 30 15% 25%;
+    --card: 35 30% 96%;
+    --card-foreground: 25 15% 20%;
 
-    --popover: 42 20% 96%;
-    --popover-foreground: 30 15% 25%;
+    --popover: 35 30% 96%;
+    --popover-foreground: 25 15% 20%;
 
-    --primary: 25 75% 55%;
-    --primary-foreground: 45 15% 97%;
+    --primary: 15 65% 50%;
+    --primary-foreground: 35 25% 98%;
 
-    --secondary: 40 25% 88%;
-    --secondary-foreground: 30 15% 35%;
+    --secondary: 30 35% 90%;
+    --secondary-foreground: 25 20% 30%;
 
-    --muted: 40 15% 92%;
-    --muted-foreground: 30 10% 50%;
+    --muted: 30 20% 94%;
+    --muted-foreground: 25 15% 55%;
 
-    --accent: 30 35% 85%;
-    --accent-foreground: 30 25% 30%;
+    --accent: 25 45% 88%;
+    --accent-foreground: 25 25% 25%;
 
     --destructive: 0 70% 55%;
-    --destructive-foreground: 45 15% 97%;
+    --destructive-foreground: 35 25% 98%;
 
-    --border: 40 20% 85%;
-    --input: 40 20% 90%;
-    --ring: 25 75% 55%;
+    --border: 30 25% 88%;
+    --input: 30 25% 92%;
+    --ring: 15 65% 50%;
 
-    /* Custom tokens for homemade construction theme */
-    --hero-gradient: linear-gradient(135deg, hsl(25 75% 55%), hsl(30 65% 65%));
-    --service-card-bg: 42 20% 96%;
-    --service-card-hover: 40 25% 92%;
-    --construction-orange: 25 75% 55%;
-    --construction-gray: 30 15% 45%;
+    /* Custom tokens for family business theme */
+    --hero-gradient: linear-gradient(135deg, hsl(15 65% 50%), hsl(25 55% 65%));
+    --service-card-bg: 35 30% 96%;
+    --service-card-hover: 30 35% 93%;
+    --construction-orange: 15 65% 50%;
+    --construction-gray: 25 15% 50%;
 
     --radius: 0.25rem;
 

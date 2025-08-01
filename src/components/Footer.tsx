@@ -14,7 +14,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-sm opacity-80 leading-relaxed">
-              Votre partenaire de confiance pour tous vos projets de rénovation et construction.
+              Une entreprise familiale qui privilégie la qualité et la proximité avec ses clients depuis plus de 20 ans.
             </p>
           </div>
 
